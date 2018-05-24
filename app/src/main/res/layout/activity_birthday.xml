@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/NameIn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Birthday">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="@string/Name"
+        app:layout_constraintBottom_toTopOf="@+id/DateOfBirth"
+        app:layout_constraintStart_toStartOf="@+id/DateOfBirth" />
+
+    <TextView
+        android:id="@+id/DateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/DateOfBirth"
+        app:layout_constraintEnd_toStartOf="@+id/DateOfBirthInput"
+        app:layout_constraintTop_toBottomOf="@+id/NameInput" />
+
+
+    <EditText
+        android:id="@+id/NameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/DateOfBirthInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/DateOfBirth"
+        app:layout_constraintStart_toStartOf="@+id/NameInput" />
+
+    <Button
+        android:id="@+id/OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginTop="74dp"
+        android:onClick="onWriteClicked"
+        android:text="@string/OK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateOfBirthInput" />
+</android.support.constraint.ConstraintLayout>

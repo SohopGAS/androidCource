@@ -17,4 +17,13 @@
     <string name="buttonMultiplication">*</string>
     <string name="buttonDivide">/</string>
     <string name="buttonClear">CLEAR</string>
+    <string name="title_activity_birthday">Birthday</string>
+    <string name="Add">Add</string>
+    <string name="captains_log">Captains Log</string>
+    <string name="Name">Name</string>
+    <string name="DateOfBirth">Date of Birth</string>
+    <string name="OK">OK</string>
+
 </resources>
+
+

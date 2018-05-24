@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
     final static ArrayList<ArrayItem> hw = new ArrayList<>();
     static {
         hw.add(new ArrayItem("Calculator Activity ",Calculator.class));
-//        hw.add(new ArrayList("Birthday Activity ",birthdayActivity.class));
+        hw.add(new ArrayItem("Birthday Activity ",Birthday.class));
+        hw.add(new ArrayItem("Animation",Animation.class));
 //        more homework..
     }
 
@@ -58,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
                     // nothing to do here
                     Toast.makeText(getBaseContext(), "Activity is not attached", Toast.LENGTH_LONG).show();
                 }
-            } else {
+            }
+            else {
                 Intent intent = new Intent(getBaseContext(), clicked.getActivity());
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);

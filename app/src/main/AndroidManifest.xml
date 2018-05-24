@@ -19,7 +19,18 @@
         <activity
             android:name=".Calculator"
             android:label="@string/title_activity_calculator"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Birthday"
+            android:label="@string/title_activity_birthday"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".InputBirthOfDate" />
+        <activity android:name=".Animation"></activity>
     </application>
 
 </manifest>
